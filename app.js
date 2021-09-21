@@ -10,11 +10,23 @@ new Vue({
         alt: 'this is an image',
         link: 'https://google.com',
         hi: 'hi this is vue js',
-        yes: "<strong>Hello there</strong>" 
+        yes: "<strong>Hello there</strong>" ,
+        user_name : "john",
+        user_age: 17,
+        allowed_age: 18,
+        bikes :['honda','yamaha','tvs','kawasaki'],
+        users :{
+            name: 'sabbir',
+            age : 23,
+            phone : 892598
+        }
     },
     methods:{
         hello(){
             return this.books.name;
+        },
+        checkValidity(){
+            return this.user_age >= this.allowed_age ? true:false ; 
         }
     }
 });

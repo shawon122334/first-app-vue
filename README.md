@@ -5,5 +5,6 @@ things I learned from my first vue js applications are :
     3.v-bind (directives : to use data in method )
     4.v-text
     5.v-html
-    6.conditional rendering 
-    7.
+    6.conditional rendering (v-if ,v-else)
+    7.v-show (always render to dom but if condition does not match then it will not show )
+    8. v-for (used in array , objects)

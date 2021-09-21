@@ -14,12 +14,39 @@
          
         <p> {{hello() }} </p>
 
+        <!-- directives -->
         <img v-bind:src="photo" v-bind:alt="alt"> 
         <hr>
         <a v-bind:href="link">click me</a>
         <hr>
         <p v-text="hi"></p>
         <p v-html="yes"></p>
+        
+        
+        <!--conditional rendering -->
+        <p v-if="checkValidity()" > You are allowed to go</p> 
+
+        <p v-else-if="user_name === 'joh1n'"> you can go</p>
+
+         <p v-else>You are not allowed to go</p>
+         
+         <p v-show="user_name == 'john'">show name </p>
+         <p v-show="user_name !== 'john'">do not show name </p>
+
+         <!-- loop in array -->
+         <p v-for="(bike,index) in bikes">
+            {{index}} : {{bike}}
+        </p>
+        
+        <!-- loop in object -->
+        <p v-for="(value,key,index) in users">
+            {{index}} : {{key}} : {{value}}
+        </p>
+
+        <!-- loop print 1 to 10 -->
+        <p v-for="n in 10">
+            {{n}}
+        </p>
    </div>
 
     <script src="app.js"></script>
