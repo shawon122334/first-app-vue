@@ -19,7 +19,8 @@ new Vue({
             name: 'sabbir',
             age : 23,
             phone : 892598
-        }
+        },
+        myName: 'sabbir'
     },
     methods:{
         hello(){
@@ -27,6 +28,12 @@ new Vue({
         },
         checkValidity(){
             return this.user_age >= this.allowed_age ? true:false ; 
+        },
+        update(){
+            // setTimeout(() => {
+            //     this.myName = 'Shawon'
+            // }, 2000);
+            this.myName='shawon'
         }
     }
 });
