@@ -10,10 +10,16 @@
 <body>
     <div id="app">
         <p> {{title}} </p>
-        <p> {{cars[0]}} </p>
-        <p> {{robot.name}} </p>
-        <p> {{greeting() }} </p>
- 
+        <p> {{bikes[1]}} </p>
+         
+        <p> {{hello() }} </p>
+
+        <img v-bind:src="photo" v-bind:alt="alt"> 
+        <hr>
+        <a v-bind:href="link">click me</a>
+        <hr>
+        <p v-text="hi"></p>
+        <p v-html="yes"></p>
    </div>
 
     <script src="app.js"></script>
